@@ -75,6 +75,8 @@ We're doing two exercises
   - add links on login + movie containers to one another's routes
    with React Router's `Link` component.
 ```
+import { Link } from "react-router-dom";
+...
 <Link to="/path">I'm a link!</Link>
 ```
 
