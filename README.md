@@ -1,7 +1,5 @@
 ## BCC Workshop examples!
 
-- Hello world in Codesandbox https://codesandbox.io/s/5ym8zpz7jx
-
 ### Trivia App
 - Creating our first component
   - **Start**: https://codesandbox.io/s/8n3m0wm87l
@@ -24,12 +22,11 @@
   - **Complete: https://codesandbox.io/s/8lzyq8o209
 
 ### Movie App
-If you're coming from the beginning, there's a few files you'll need to add to your application to make things a bit more reasonable.
 
-Start with the following sandbox: https://codesandbox.io/s/53rymm875p
+Start with the following sandbox: https://codesandbox.io/s/v8p88njozy
 
 - Beginnings of a legitimate application:
-  - **Start**: https://codesandbox.io/s/8lzyq8o209
+  - **Start**: https://codesandbox.io/s/v8p88njozy
   - **Complete**: https://codesandbox.io/s/53rymm875p
 
 - Displaying some movies:
