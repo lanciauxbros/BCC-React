@@ -72,6 +72,10 @@ We're doing two exercises
 - Routing exercise
   - create containers for login + movies
   - add routes
+    - Use singleton history
+    ```
+    import history from "./history";
+    ```
   - add links on login + movie containers to one another's routes
    with React Router's `Link` component.
 ```
