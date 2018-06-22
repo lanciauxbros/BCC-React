@@ -30,8 +30,8 @@ Start with the following sandbox: https://codesandbox.io/s/v8p88njozy
   - **Complete**: https://codesandbox.io/s/53rymm875p
 
 - Displaying some movies:
- - **Start**: https://codesandbox.io/s/53rymm875p
- - **Complete**: https://codesandbox.io/s/yjr2rzk22j
+  - **Start**: https://codesandbox.io/s/53rymm875p
+  - **Complete**: https://codesandbox.io/s/yjr2rzk22j
 
  - Add Redux store:
   - **Start**: https://codesandbox.io/s/yjr2rzk22j
