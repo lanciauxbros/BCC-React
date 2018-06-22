@@ -54,9 +54,9 @@
 
 
 - Cleanup
- - Pull state out of our `App` component, create a container in the `/containers` directory (which you'll need to make)
- - Isolate all state in this new container component.
- - Update `TriviaQuestion` to be a functional component
+  - Pull state out of our `App` component, create a container in the `/containers` directory (which you'll need to make)
+  - Isolate all state in this new container component.
+  - Update `TriviaQuestion` to be a functional component
 
 
 
@@ -70,29 +70,29 @@
 
 We're doing two exercises
 - Routing exercise
- - create containers for login + movies
- - add routes
- - add links on login + movie containers to one another's routes
+  - create containers for login + movies
+  - add routes
+  - add links on login + movie containers to one another's routes
    with React Router's `Link` component.
 ```
 <Link to="/path">I'm a link!</Link>
 ```
 
 - Data exercise
- - Create a movie card component.
- - Load movie data on `componentDidMount` and save to container state.
- - Display a list of movie cards
+  - Create a movie card component.
+  - Load movie data on `componentDidMount` and save to container state.
+  - Display a list of movie cards
 
 
 
 - Redux exercise
- - Add dependencies for `redux` + `react-redux` + `redux-thunk`
- - Convert the container state to use Redux
- - Create `actionCreators.js`
- - Create store on `index.js` with `createStore.js`
- - Pass store to provider that wraps application.
- - Add connect to `MovieContainer`
-   - Get `movies` from state + pass actionCreator for loading movies.
+  - Add dependencies for `redux` + `react-redux` + `redux-thunk`
+  - Convert the container state to use Redux
+  - Create `actionCreators.js`
+  - Create store on `index.js` with `createStore.js`
+  - Pass store to provider that wraps application.
+  - Add connect to `MovieContainer`
+    - Get `movies` from state + pass actionCreator for loading movies.
 
 
 - Add controlled input to search for movies
