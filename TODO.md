@@ -85,14 +85,14 @@ import { Link } from "react-router-dom";
 ```
 
 - Data exercise
-  - Create a movie card component.
+  - Create a movie card component that displays title, poster, and description
   - Load movie data on `componentDidMount` and save to container state.
     ```
     import { getMovies } from '../api';
     ...
     async componentDidMount() {
       ...
-      const movies = await getMovies();
+      const movies = await getMovies().results;
     }
     ```
   - Display a list of movie cards
