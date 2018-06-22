@@ -1,4 +1,4 @@
-
+### Trivia
 - We're going with `Creating our first component`
   - Objectives: create a new component called `TriviaQuestion` that displays trivia data.
   - CSS classes you'll use:
@@ -14,11 +14,13 @@
    - In the `TriviaQuestion` component, add properties for `title`, `answers` and `correctAnswerId`
    - Pass answers from your app component in `index.js`.
    - Answers should be in the following format:
+  ```
       [
         { id: 1, label: "Answer 1" },
         { id: 2, label: "Answer 2" },
         { id: 3, label: "Answer 3" }
       ];
+  ```
   - Create component for individual questions
   - Alongside answer data, pass a function from the existing component
     that `alerts` "Yes" or "No" if it's correct.
@@ -64,41 +66,59 @@
 
 
 
--- NEW App
+### NEW App
 
-We're doing two excercised
--- Routing exercise
+We're doing two exercises
+- Routing exercise
  - create containers for login + movies
  - add routes
- - add links on login + movie containers to
+ - add links on login + movie containers to one another's routes
+   with React Router's `Link` component.
+```
+<Link to="/path">I'm a link!</Link>
+```
 
-
--- Data exercise
+- Data exercise
  - Create a movie card component.
  - Load movie data on `componentDidMount` and save to container state.
  - Display a list of movie cards
 
 
+
 - Redux exercise
- - Add dependencies for redux + react-redux + redux-thunk
+ - Add dependencies for `redux` + `react-redux` + `redux-thunk`
  - Convert the container state to use Redux
- - Add actionCreators.js
- - Create store
- - Add connect to MovieContainer
-    Call property 'load data function'
-    Get movies from props
+ - Create `actionCreators.js`
+ - Create store on `index.js` with `createStore.js`
+ - Pass store to provider that wraps application.
+ - Add connect to `MovieContainer`
+   - Get `movies` from state + pass actionCreator for loading movies.
 
 
-- Add input to search for movies
- - Add actionCreator to search for movies.
- - Handle action in reducer.
- - Add controlled input to handle searches + add a button to submit a search.
- - Add actionCreators to our container and pass to new search component.
+- Add controlled input to search for movies
+  - Add actionCreator to search for movies.
+  - Handle action in reducer.
+  - Add controlled input to handle searches + add a button to submit a search.
+  - Add actionCreators to our container and pass to new search component.
+
+
+
+- Add `Authentication`
+  - Add `formik` dependency
+  - edit default route to send user to `/login`
+  - add actionCreator that accepts `username` and `password`.
+  - Add new reducer state value: `authenticated` + handle the action.
+  - Add formik fields for username / password
+  - Add validation for formik fields
+  - Connect loginContainer + add onSubmit that fires off 'auth' action (bool)
+  - Update action to redirect to '/movies' with:
+  `history.push('/url_that_I_want_to_go_to')`
+  - Update MovieContainer to send unauthenticated users back to '/login'
 
 
 - Cart
- - Add action
- - Update reducer
- - Update Movie Card to allow you to add to cart.
- - Toggle some text on Movie Card to show whether or not its in the cart
- - Add cart count to Navigation by adding connect to Navigation.
+  - Add action
+  - Update reducer
+  - Update Movie Card to allow you to add to cart.
+  - Toggle some text on Movie Card to show whether or not its in the cart
+  - Add cart count to Navigation by adding connect to Navigation.
